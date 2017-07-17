@@ -1,0 +1,332 @@
+
+
+body {
+    background-image: url("bg-image.jpg");
+}
+
+h1 {
+    margin-top: 4%;
+    color: white;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+h1::before {
+    content: '\2665';
+    font-size: 60px;
+    margin-right: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1::after {
+    content: '\2665';
+    font-size: 60px;
+    margin-left: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1::selection {
+    color: green;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 4px 2px red;
+}
+
+h2::first-letter {
+	font-size: 40px; 
+    color: green;
+	text-shadow: 5px 5px;
+}
+
+h2::selection {
+    color: green;
+    background-color: black;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 4px 2px red;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+p::selection {
+    color: green;
+    background-color: black;
+}
+
+#main {
+    padding-bottom: 120px;
+}
+
+.menu {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.menu ul {
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    margin-right: 30px;
+    font-weight: normal;
+}
+
+nav.breadcrumb {
+    float: left;
+    display: block;
+    margin-left: 30px;
+}
+
+.breadcrumb li {
+    display: inline-block;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+ul {
+    line-height: 1.5;
+    list-style-image: url(puce.gif);
+    list-style-image: width: 10px;
+    list-style-position: inside;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-shadow: 4px 2px white;
+}
+
+ul::selection {
+    color: green;
+    background-color: black;
+}
+
+li {
+    list-style-type: none;
+    list-style-position: inside;
+    line-height: 1.7;
+}
+
+li:nth-child(odd) {
+    color:red;
+}
+
+li:nth-child(even) {
+    color:black;
+}
+
+li::selection {
+    color: green;
+    background-color: black;
+}
+
+
+nav {
+    display: inline;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 18px 0 rgba(0, 0, 0, 0.2), 20px 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img::selection {
+    color: green;
+    background-color: green;
+}
+
+
+.Remi {
+    -webkit-filter: sepia(100%);filter: sepia(100%);
+    animation-name: Rémi;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes Rémi {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+time {
+    text-decoration: underline;
+}
+
+.btn {
+    background: #0b6348;
+    background-image: -webkit-linear-gradient(top, #0b6348, #0ba854);
+    background-image: -moz-linear-gradient(top, #0b6348, #0ba854);
+    background-image: -ms-linear-gradient(top, #0b6348, #0ba854);
+    background-image: -o-linear-gradient(top, #0b6348, #0ba854);
+    background-image: linear-gradient(to bottom, #0b6348, #0ba854);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: red;
+}
+
+form input,
+textarea {
+    background: white;
+    border: solid 1px red;
+    color: red;
+}
+
+form {
+    margin-top: 4%;
+    text-align: center;
+    color: white;
+}
+
+label {
+    display: block;
+}
+
+footer {
+    height: 115px;
+    background-image: url(bg-footer.jpg);
+    background-position: center;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.p {
+    text-align: center;
+    color: white;
+    text-shadow: 4px 2px red;    
+}
+
+div.container {
+    height: 150px;
+    position: absolute;
+    right: 21px;
+    top:11px;
+}
+
+div.LinkedIn {
+    display: inline-block;
+}
+
+div.LinkedIn:hover {
+    transform: skewX(-30deg);
+}
+
+div.Viadeo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.Viadeo:hover {
+    transform: skewX(-30deg);
+}
+
+div.RemixJobs {
+    width: 67px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.RemixJobs:hover {
+    transform: skewX(-30deg);
+}
+
+div.DoYouBuzz {
+    width: 178px;
+    height: 50px;
+}
+
+div.DoYouBuzz:hover {
+    transform: skewX(-30deg);
+}
+
+div.LinkedIn:hover {
+    border: solid 2px red;
+    box-shadow: 8px 8px 0px red; 
+    border-radius: 8px;
+}
+
+div.Viadeo:hover {
+    border: solid 2px red;
+    box-shadow: 8px 8px 0px red; 
+    border-radius: 8px;
+}
+
+div.RemixJobs:hover {
+    border: solid 2px red;
+    box-shadow: 8px 8px 0px red; 
+    border-radius: 8px;
+}
+
+div.DoYouBuzz:hover {
+    border: solid 2px red;
+    box-shadow: 8px 8px 0px red; 
+    border-radius: 8px;
+}
+
+a.tothetop {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+.tothetop:hover {
+    text-transform: uppercase;
+}

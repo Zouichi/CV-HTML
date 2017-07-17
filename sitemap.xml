@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>home.html</loc>
+    </url>
+    <url>
+        <loc>experiences.html</loc>
+    </url>
+    <url>
+        <loc>formations.html</loc>
+    </url>
+    <url>
+        <loc>competences.html</loc>
+    </url>
+    <url>
+        <loc>loisirs.html</loc>
+    </url>
+    <url>
+        <loc>contact.html</loc>
+    </url>
+</urlset>
