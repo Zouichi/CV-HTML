@@ -399,6 +399,8 @@ div.DoYouBuzz:hover {
     .breadcrumb ul {
         padding-left: 5px;
         font-size: 8px;
+        /*REPRENDRE ICI
+        PREVOIR @MEDIA POUR TAILLE ENTRE 320 ET 800PX*/
     }
 
     .menu ul {
