@@ -65,24 +65,31 @@ h3 {
 }
 
 .menu li {
+    width: 165px;
     margin-right: 10px;
-    padding-left: 80px;
-    border: solid 1px white;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    border: solid 1px #c9c9cc;
     border-radius:12px 0 12px 0;
     box-shadow:1px 1px 3px #999;
-    text-align: center;
     float: left;
     font-family: 'Play', sans-serif;
     font-size: 20px;
 }
 
+.menu li:hover {
+    border: solid 1px #FFFFFF;
+}
+
 .menu a {
-    margin-right: 80px;
     color: #c9c9cc;
+    text-decoration: none;
 }
 
 .menu a:hover {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 nav.menu {
@@ -140,6 +147,7 @@ img body {
 }
 
 .banner {
+    background-image: url(banner.jpg);
     width: 100%;
     height: 150px;
     margin: 0;
@@ -187,6 +195,71 @@ img body {
     border-radius: 8px;
 }
 
+.portfolio-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolio-1, .portfolio-2 {
+    width: 50%;
+    height: 400px;
+    text-align: center;
+}
+
+a.annuaireifa {
+    width: 60%;
+    height: 70%;
+    background-image: url(annuaire.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    color: #FFF;
+    padding-top: 2px;
+}
+
+a.annuaireifa:hover {
+    background-image: url(git-annuaireifa.png);
+    transition: all 2s;
+}
+
+a.cv {
+    width: 60%;
+    height: 70%;
+    background-image: url(cv.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    color: #FFF;
+    padding-top: 2px;
+}
+
+a.cv:hover {
+    background-image: url(git-cv.png);
+    transition: all 2s;
+}
+
+li.espagne::before {
+    content: none;
+}
+
+li.espagne {
+    margin-left: 25px;
+    list-style-image: url(puce_espagne.png);
+}
+
+li.usa::before {
+    content: none;
+}
+
+li.usa {
+    margin-left: 25px;
+    list-style-image: url(puce_usa.png);
+}
+
 form {
     text-align: center;
     color: #c9c9cc;
@@ -217,6 +290,12 @@ input[type="submit"] {
     box-shadow:1px 1px 3px #999;
 }
 
+input[type="submit"]:hover {
+    background-color: #2f2f30;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 p.contact {
     font-size: 1.2em;
     text-align: center;
@@ -227,6 +306,7 @@ footer {
     height: 120px;
     width: 100%;
     background-image: url(footer.jpg);
+    background-size: cover;
     left: 0;
     bottom: 0;
     position: fixed;
@@ -247,18 +327,42 @@ div.container {
 
 div.LinkedIn {
     display: inline-block;
+    border: solid 1px transparent;
+}
+
+div.LinkedIn:hover {
+    border: solid 1px #FFFFFF;
+    border-radius: 8px;
 }
 
 div.Viadeo {
     display: inline-block;
+    border: solid 1px transparent;
+}
+
+div.Viadeo:hover {
+    border: solid 1px #FFFFFF;
+    border-radius: 8px;
 }
 
 div.RemixJobs {
     display: inline-block;
+    border: solid 1px transparent;
+}
+
+div.RemixJobs:hover {
+    border: solid 1px #FFFFFF;
+    border-radius: 8px;
 }
 
 div.DoYouBuzz {
     width: 142px;
+    border: solid 1px transparent;
+}
+
+div.DoYouBuzz:hover {
+    border: solid 1px #FFFFFF;
+    border-radius: 8px;
 }
 
 .LinkedIn img {
@@ -281,3 +385,50 @@ div.DoYouBuzz {
 .DoYouBuzz img {
     height: 40px;
 }
+
+@media (max-width: 320px) {
+    nav.menu {
+        height: 8.5%;
+    }
+
+    nav.breadcrumb {
+        margin: 0;
+        font-size: 
+    }
+
+    .breadcrumb ul {
+        padding-left: 5px;
+        font-size: 8px;
+    }
+
+    .menu ul {
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px 0 0 5px;
+    }
+
+    .menu li {
+        width: 65px;
+        margin: 0 10px 10px 0;
+        font-size: 7px;
+        line-height: 1;
+        padding: 2px 0 2px 0;
+    }
+
+    .banner {
+        background-image: url(banner-small.jpg);
+        height: 15%;
+    }
+
+    a.annuaireifa {
+        width: ;
+        height: ;
+    }
+
+    a.cv {
+        width: ;
+        height: ;
+    }
