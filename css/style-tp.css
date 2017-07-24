@@ -598,13 +598,44 @@ div.DoYouBuzz:hover {
         margin-top: 1%;
     }
 
-    .LinkedIn img, .Viadeo img, .RemixJobs img, .DoYouBuzz img {
-        width: 50%;
-        height: 50%;
+    div.LinkedIn {
+        width: 8%;
+        height: 31%;
+    }
+
+    .LinkedIn img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.Viadeo {
+        width: 8%;
+        height: 31%;
+    }
+
+    .Viadeo img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.RemixJobs {
+        width: 10%;
+        height: 31%;
+    }
+
+    .RemixJobs img {
+        height: 100%;
     }
 
     div.DoYouBuzz {
-        margin-left: 40%;
+        width: 28%;
+        height: 31%;
+        margin: 1% 0 0 40%;
+    }
+
+    .DoYouBuzz img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -633,7 +664,7 @@ div.DoYouBuzz:hover {
     }
     
     .main {
-        padding-bottom: 25%;
+        padding-bottom: 11%;
     }
 
     .banner {
@@ -763,7 +794,7 @@ div.DoYouBuzz:hover {
     }
 
     footer {
-        height: 80px;
+        height: 60px;
         background-image: url(/HTML/CV-final/images/footer.jpg);
     }
 
@@ -777,13 +808,45 @@ div.DoYouBuzz:hover {
     }
 
     div.LinkedIn {
+        width: 5%;
+        height: 45%;
         margin-left: 16%;
     }
 
-    .LinkedIn img, .Viadeo img, .RemixJobs img, .DoYouBuzz img {
-        width: 75%;
-        height: 75%;
+    .LinkedIn img {
+        width: 98%;
+        height: 100%;
     }
+
+    div.Viadeo {
+        width: 5%;
+        height: 45%;
+    }
+
+    .Viadeo img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.RemixJobs {
+        width: 6.5%;
+        height: 45%;
+    }
+
+    .RemixJobs img {
+        height: 100%;
+    }
+
+    div.DoYouBuzz {
+        width: 17.4%;
+        height: 45%;
+    }
+
+    .DoYouBuzz img {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 /*Reponsive iPad portrait*/
@@ -1239,7 +1302,7 @@ div.DoYouBuzz:hover {
     }
 
     .portfolio-1, .portfolio-2, .portfolio-3 {
-        height: 330px;
+        height: 420px;
     }
 
     .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
@@ -1258,7 +1321,6 @@ div.DoYouBuzz:hover {
     a.cv {
         width: 85%;
         height: 60%;
-        margin-top: 5%;
     }
 
     a.bilan-ea {
@@ -1297,11 +1359,11 @@ div.DoYouBuzz:hover {
     }
 
 }
- 
+
 /*Screens with a width between 1025px and 1440px*/
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     nav.menu {
-        height: 10%;
+        height: 17%;
     }
 
     .menu ul {
@@ -1323,13 +1385,13 @@ div.DoYouBuzz:hover {
     }
     
     .main {
-        padding-bottom: 13%;
+        padding-bottom: 9%;
     }
 
     .banner {
         background-image: url(/HTML/CV-final/images/banner.jpg);
         background-repeat: no-repeat;
-        height: 18%;
+        height: 30%;
     }
    
     nav.breadcrumb {
@@ -1367,8 +1429,8 @@ div.DoYouBuzz:hover {
     }
 
     img.Remi {
-        width: 35%;
-        margin-top: 5%;
+        width: 20%;
+        margin-top: 2%;
     }
 
     .p-home {
@@ -1376,23 +1438,23 @@ div.DoYouBuzz:hover {
     }
 
     .europe-assur {
-        width: 20%;
+        width: 15%;
     }
 
     .novalem {
-        width: 25%;
+        width: 20%;
     }
 
     .orange {
-        width: 13%;
+        width: 8%;
     }
 
     .guinot {
-        width: 25%;
+        width: 20%;
     }
 
     .synergie {
-        width: 15%;
+        width: 10%;
     }
 
     ul.datetime {
@@ -1410,15 +1472,11 @@ div.DoYouBuzz:hover {
     }
 
     .portfolio-1, .portfolio-2, .portfolio-3 {
-        height: 330px;
+        height: 420px;
     }
 
     .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
-        font-size: 90%;
-    }
-
-    .portfolio-1 {
-        margin-left: 1%;
+        font-size: 95%;
     }
 
     img.annuaireifa {
@@ -1429,7 +1487,6 @@ div.DoYouBuzz:hover {
     a.cv {
         width: 85%;
         height: 60%;
-        margin-top: 5%;
     }
 
     a.bilan-ea {
@@ -1438,7 +1495,7 @@ div.DoYouBuzz:hover {
     }
 
     #nom, #prénom, #mail, #message {
-        width: 23%;
+        width: 15%;
     }
 
     li.espagne {
@@ -1468,6 +1525,7 @@ div.DoYouBuzz:hover {
     }
 
 }
-        /*PREVOIR @MEDIA POUR + DE 1440 ? + PORTRAIT ET PAYSAGE POUR CHAQUE JUSQU'A ?? + PRINT*/
-        /*REPRENDRE LIGNE 779 ==> FINIR FOOTER + PADDING-BOTTOM MAIN*/
-        /*REGLER PROBLEME ANNUAIRE PORTFOLIO*/
+/*A FAIRE : Screens with a width between 1025px and 1440px*/
+/*PREVOIR @MEDIA POUR + DE 1440 + PORTRAIT ET PAYSAGE POUR CHAQUE JUSQU'A ?? + PRINT*/
+/*REGLER PROBLEME ANNUAIRE PORTFOLIO*/
+/*CHANGER TAILLE BORDURES SUR HOVER DANS FOOTER*/
