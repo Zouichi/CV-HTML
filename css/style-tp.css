@@ -1,9 +1,11 @@
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
     background: linear-gradient(#4a4a4c, #a6a8ad);
     background-repeat: no-repeat;
@@ -45,7 +47,7 @@ h3 {
 }
 
 .main {
-    padding-bottom: 125px;
+    margin-bottom: 12%;
 }
 
 .main li:before {
@@ -71,8 +73,8 @@ h3 {
     padding-left: 30px;
     text-align: center;
     border: solid 1px #c9c9cc;
-    border-radius:12px 0 12px 0;
-    box-shadow:1px 1px 3px #999;
+    border-radius: 12px 0 12px 0;
+    box-shadow: 1px 1px 3px #999;
     float: left;
     font-family: 'Play', sans-serif;
     font-size: 20px;
@@ -89,7 +91,7 @@ h3 {
 }
 
 .menu a:hover {
-    color:#2f2f30;
+    color: #2f2f30;
     text-decoration: underline;
 }
 
@@ -148,6 +150,9 @@ img body {
 }
 
 .banner {
+    background: url(/HTML/CV-final/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 150px;
     margin: 0;
@@ -169,7 +174,7 @@ img body {
 .novalem {
     width: 200px;
     display: block;
-    margin: auto;   
+    margin: auto;
     border-radius: 8px;
 }
 
@@ -198,13 +203,16 @@ img body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 120px;
-    padding-bottom: 110px;
+    margin-bottom: 110px;
 }
 
-.portfolio-1, .portfolio-2, .portfolio-3 {
+.portfolio-1,
+.portfolio-2,
+.portfolio-3 {
     height: 400px;
     text-align: center;
 }
+
 .portfolio-1 {
     grid-column: 1 / 2;
     grid-row: 1;
@@ -300,28 +308,32 @@ label {
     line-height: 2em;
 }
 
-#nom, #prénom, #mail, #message {
+#nom,
+#prénom,
+#mail,
+#message {
     height: 18px;
-    border-radius:12px 0 12px 0;
+    border-radius: 12px 0 12px 0;
 }
 
-input, textarea {
+input,
+textarea {
     background: #868889;
 }
 
 input[type="submit"] {
     margin-top: 5px;
-    width:70px;
-    cursor:pointer;
+    width: 70px;
+    cursor: pointer;
     background: #868889;
     font-family: 'Play', sans-serif;
     font-size: 0.8em;
     font-weight: bold;
-    color:#c9c9cc;
-    padding:6px 0 6px 0;
-    border-radius:12px 0 12px 0;
+    color: #c9c9cc;
+    padding: 6px 0 6px 0;
+    border-radius: 12px 0 12px 0;
     border: none;
-    box-shadow:1px 1px 3px #999;
+    box-shadow: 1px 1px 3px #999;
 }
 
 input[type="submit"]:hover {
@@ -340,6 +352,7 @@ footer {
     height: 120px;
     width: 100%;
     background-image: url(/HTML/CV-final/images/footer.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     left: 0;
     bottom: 0;
@@ -357,7 +370,7 @@ div.container {
     margin-top: 20px;
     float: left;
     right: 21px;
-    top:11px;
+    top: 11px;
 }
 
 div.LinkedIn {
@@ -400,7 +413,6 @@ div.DoYouBuzz {
     float: left;
     display: block;
     margin-left: 10%;
-    width: 142px;
     border: solid 1px transparent;
 }
 
@@ -410,24 +422,11 @@ div.DoYouBuzz:hover {
 }
 
 .LinkedIn img {
-    height: 40px;
-    width: 40px;
     border-radius: 8px;
-}
-
-.Viadeo img {
-    height: 40px;
-    width: 40px;
 }
 
 .RemixJobs img {
-    height: 40px;
     border-radius: 8px;
-
-}
-
-.DoYouBuzz img {
-    height: 40px;
 }
 
 /*Responsive smartphone portrait*/
@@ -453,20 +452,21 @@ div.DoYouBuzz:hover {
         line-height: 1;
         padding: 1% 0 1% 0;
     }
-    
+
     .main {
-        padding-bottom: 25%;
+        margin-bottom: 25%;
     }
 
     .banner {
-        background-image: url(/HTML/CV-final/images/banner.jpg);
+        background: url(/HTML/CV-final/images/banner-414.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         height: 18%;
     }
-   
+
     nav.breadcrumb {
-       width: 100%;
-       margin: 0;
+        width: 100%;
+        margin: 0;
     }
 
     .breadcrumb ul {
@@ -541,13 +541,21 @@ div.DoYouBuzz:hover {
     .portfolio-grid {
         grid-row-gap: 0;
         padding-bottom: 0;
+        height: 66vh;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        height: 240px;
+    .portfolio-1,
+    .portfolio-2 {
+        height: 100%;
     }
 
-    .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
+    .portfolio-3 {
+        height: 119%;
+    }
+
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
         font-size: 80%;
     }
 
@@ -567,11 +575,15 @@ div.DoYouBuzz:hover {
         height: 50%;
     }
 
-    p.contact, label {
+    p.contact,
+    label {
         font-size: 85%;
     }
 
-    #nom, #prénom, #mail, #message {
+    #nom,
+    #prénom,
+    #mail,
+    #message {
         height: 90%;
         width: 35%;
     }
@@ -585,8 +597,10 @@ div.DoYouBuzz:hover {
     }
 
     footer {
-        height: 80px;
-        background-image: url(/HTML/CV-final/images/footer.jpg);
+        background: url(/HTML/CV-final/images/footer-414.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 11%;
     }
 
     .contact-footer {
@@ -630,7 +644,7 @@ div.DoYouBuzz:hover {
     div.DoYouBuzz {
         width: 28%;
         height: 31%;
-        margin: 1% 0 0 40%;
+        margin: 1% 0 0 33%;
     }
 
     .DoYouBuzz img {
@@ -640,7 +654,7 @@ div.DoYouBuzz:hover {
 }
 
 /*Responsive smartphone landscape*/
-@media screen and (orientation:landscape) and (max-width: 736px) {
+@media screen and (orientation:landscape) and (max-width: 799px) {
     nav.menu {
         height: 21.5%;
     }
@@ -662,20 +676,21 @@ div.DoYouBuzz:hover {
         line-height: 1;
         padding: 1% 0 1% 0;
     }
-    
+
     .main {
-        padding-bottom: 11%;
+        margin-bottom: 14%;
     }
 
     .banner {
-        background-image: url(/HTML/CV-final/images/banner.jpg);
+        background: url(/HTML/CV-final/images/banner-736.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         height: 35%;
     }
-   
+
     nav.breadcrumb {
-       width: 100%;
-       margin: 0;
+        width: 100%;
+        margin: 0;
     }
 
     .breadcrumb ul {
@@ -749,14 +764,22 @@ div.DoYouBuzz:hover {
     .portfolio-grid {
         grid-row-gap: 0;
         margin-top: 2%;
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
-        height: 300px;
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
+        height: 94%;
     }
 
-    .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
+    .portfolio-3 {
+        margin-bottom: 20%;
+    }
+
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
         font-size: 80%;
     }
 
@@ -776,13 +799,17 @@ div.DoYouBuzz:hover {
         height: 70%;
     }
 
-    p.contact, label {
+    p.contact,
+    label {
         font-size: 85%;
     }
 
-    #nom, #prénom, #mail, #message {
+    #nom,
+    #prénom,
+    #mail,
+    #message {
         height: 90%;
-        width: 23%;
+        width: 20%;
     }
 
     li.espagne {
@@ -794,8 +821,10 @@ div.DoYouBuzz:hover {
     }
 
     footer {
-        height: 60px;
-        background-image: url(/HTML/CV-final/images/footer.jpg);
+        background: url(/HTML/CV-final/images/footer-736.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 17%;
     }
 
     .contact-footer {
@@ -846,7 +875,6 @@ div.DoYouBuzz:hover {
         width: 100%;
         height: 100%;
     }
-
 }
 
 /*Reponsive iPad portrait*/
@@ -872,20 +900,21 @@ div.DoYouBuzz:hover {
         line-height: 1;
         padding: 1% 0 1% 0;
     }
-    
+
     .main {
-        padding-bottom: 18%;
+        margin-bottom: 18%;
     }
 
     .banner {
-        background-image: url(/HTML/CV-final/images/banner.jpg);
+        background: url(/HTML/CV-final/images/banner-768.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         height: 18%;
     }
-   
+
     nav.breadcrumb {
-       width: 100%;
-       margin: 0;
+        width: 100%;
+        margin: 0;
     }
 
     .breadcrumb ul {
@@ -922,7 +951,7 @@ div.DoYouBuzz:hover {
     }
 
     .p-home {
-        font-size: 20px;
+        font-size: 128%;
     }
 
     .europe-assur {
@@ -959,11 +988,15 @@ div.DoYouBuzz:hover {
         padding-bottom: 0;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
         height: 330px;
     }
 
-    .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
         font-size: 90%;
     }
 
@@ -987,7 +1020,10 @@ div.DoYouBuzz:hover {
         height: 60%;
     }
 
-    #nom, #prénom, #mail, #message {
+    #nom,
+    #prénom,
+    #mail,
+    #message {
         width: 23%;
     }
 
@@ -1000,23 +1036,247 @@ div.DoYouBuzz:hover {
     }
 
     footer {
-        height: 100px;
-        background-image: url(/HTML/CV-final/images/footer.jpg);
+        height: 10%;
+        background: url(/HTML/CV-final/images/footer-768.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     div.container {
         height: 100%;
-        margin-top: 3%;
+        margin-top: 2%;
     }
 
     .contact-footer {
-        font-size: 17px;
+        font-size: 100%;
     }
 
     div.LinkedIn {
         margin-left: 17%;
     }
+}
 
+/*Responsive iPad landscape*/
+@media screen and (orientation:landscape) and (min-width: 1024px) and (max-width: 1024px) {
+    nav.menu {
+        height: 15%;
+    }
+
+    .menu ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    .menu li {
+        width: 22%;
+        margin: 0 1% 2% 0;
+        font-size: 80%;
+        line-height: 1;
+        padding: 1% 0 1% 0;
+    }
+
+    .main {
+        margin-bottom: 14%;
+    }
+
+    .banner {
+        background: url(/HTML/CV-final/images/banner-1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25%;
+    }
+
+    nav.breadcrumb {
+        width: 100%;
+        margin: 0;
+    }
+
+    .breadcrumb ul {
+        margin-left: 5%;
+        padding: 0;
+        font-size: 85%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 3%;
+        font-size: 100%;
+    }
+
+    h3 {
+        margin-top: 3%;
+        font-size: 80%;
+    }
+
+    ul {
+        padding-left: 5%;
+        font-size: 90%;
+    }
+
+    li {
+        line-height: 2em;
+    }
+
+    img.Remi {
+        width: 25%;
+        margin-top: 5%;
+    }
+
+    .p-home {
+        font-size: 90%;
+    }
+
+    .europe-assur {
+        width: 15%;
+    }
+
+    .novalem {
+        width: 20%;
+    }
+
+    .orange {
+        width: 10%;
+    }
+
+    .guinot {
+        width: 20%;
+    }
+
+    .synergie {
+        width: 10%;
+    }
+
+    ul.datetime {
+        margin-left: 5%;
+        padding: 0;
+        font-size: 75%;
+    }
+
+    .datetime li {
+        margin: 0;
+    }
+
+    .portfolio-grid {
+        grid-row-gap: 0;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
+        height: 105%;
+    }
+
+    .portfolio-3 {
+        margin-bottom: 20%;
+    }
+
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
+        font-size: 80%;
+    }
+
+    img.annuaireifa {
+        width: 85%;
+        height: 70%;
+    }
+
+    a.cv {
+        width: 85%;
+        height: 70%;
+    }
+
+    a.bilan-ea {
+        width: 43%;
+        height: 70%;
+    }
+
+    p.contact,
+    label {
+        font-size: 85%;
+    }
+
+    #nom,
+    #prénom,
+    #mail,
+    #message {
+        height: 90%;
+        width: 16%;
+    }
+
+    li.espagne {
+        list-style-image: url(/HTML/CV-final/images/puce_espagne_small.png);
+    }
+
+    li.usa {
+        list-style-image: url(/HTML/CV-final/images/puce_usa_small.png);
+    }
+
+    footer {
+        background: url(/HTML/CV-final/images/footer-1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15%;
+    }
+
+    .contact-footer {
+        font-size: 90%;
+    }
+
+    div.container {
+        height: 100%;
+        margin-top: 1%;
+    }
+
+    div.LinkedIn {
+        width: 5%;
+        height: 45%;
+        margin-left: 16%;
+    }
+
+    .LinkedIn img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.Viadeo {
+        width: 5%;
+        height: 45%;
+    }
+
+    .Viadeo img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.RemixJobs {
+        width: 6.5%;
+        height: 45%;
+    }
+
+    .RemixJobs img {
+        height: 100%;
+    }
+
+    div.DoYouBuzz {
+        width: 17.4%;
+        height: 45%;
+    }
+
+    .DoYouBuzz img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*Responsive old screen portrait*/
@@ -1042,21 +1302,22 @@ div.DoYouBuzz:hover {
         line-height: 1;
         padding: 1% 0 1% 0;
     }
-    
+
     .main {
-        padding-bottom: 13%;
+        margin-bottom: 13%;
     }
 
     .banner {
-        background-image: url(/HTML/CV-final/images/banner.jpg);
+        background: url(/HTML/CV-final/images/banner-800.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         height: 18%;
     }
-   
+
     nav.breadcrumb {
-       width: 100%;
-       height: 5%;
-       margin: 0;
+        width: 100%;
+        height: 5%;
+        margin: 0;
     }
 
     .breadcrumb ul {
@@ -1093,7 +1354,7 @@ div.DoYouBuzz:hover {
     }
 
     .p-home {
-        font-size: 20px;
+        font-size: 125%;
     }
 
     .europe-assur {
@@ -1127,14 +1388,18 @@ div.DoYouBuzz:hover {
 
     .portfolio-grid {
         grid-row-gap: 0;
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
         height: 330px;
     }
 
-    .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
         font-size: 90%;
     }
 
@@ -1158,7 +1423,10 @@ div.DoYouBuzz:hover {
         height: 60%;
     }
 
-    #nom, #prénom, #mail, #message {
+    #nom,
+    #prénom,
+    #mail,
+    #message {
         width: 23%;
     }
 
@@ -1171,8 +1439,10 @@ div.DoYouBuzz:hover {
     }
 
     footer {
-        height: 100px;
-        background-image: url(/HTML/CV-final/images/footer.jpg);
+        height: 10%;
+        background: url(/HTML/CV-final/images/footer-800.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     div.container {
@@ -1181,13 +1451,235 @@ div.DoYouBuzz:hover {
     }
 
     .contact-footer {
-        font-size: 17px;
+        font-size: 100%;
     }
 
     div.LinkedIn {
         margin-left: 17%;
     }
+}
 
+/*Responsive old screen landscape*/
+@media screen and (orientation:landscape) and (min-width: 800px) and (max-width: 801px) {
+    nav.menu {
+        height: 15%;
+    }
+
+    .menu ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    .menu li {
+        width: 22%;
+        margin: 0 1% 2% 0;
+        font-size: 80%;
+        line-height: 1;
+        padding: 1% 0 1% 0;
+    }
+
+    .main {
+        margin-bottom: 14%;
+    }
+
+    .banner {
+        background: url(/HTML/CV-final/images/banner-800.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25%;
+    }
+
+    nav.breadcrumb {
+        width: 100%;
+        margin: 0;
+    }
+
+    .breadcrumb ul {
+        margin-left: 5%;
+        padding: 0;
+        font-size: 85%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 3%;
+        font-size: 100%;
+    }
+
+    h3 {
+        margin-top: 3%;
+        font-size: 80%;
+    }
+
+    ul {
+        padding-left: 5%;
+        font-size: 90%;
+    }
+
+    li {
+        line-height: 2em;
+    }
+
+    img.Remi {
+        width: 20%;
+        margin-top: 2%;
+    }
+
+    .p-home {
+        font-size: 90%;
+    }
+
+    .europe-assur {
+        width: 15%;
+    }
+
+    .novalem {
+        width: 20%;
+    }
+
+    .orange {
+        width: 10%;
+    }
+
+    .guinot {
+        width: 20%;
+    }
+
+    .synergie {
+        width: 10%;
+    }
+
+    ul.datetime {
+        margin-left: 5%;
+        padding: 0;
+        font-size: 75%;
+    }
+
+    .datetime li {
+        margin: 0;
+    }
+
+    .portfolio-grid {
+        grid-row-gap: 0;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
+        height: 105%;
+    }
+
+    .portfolio-3 {
+        margin-bottom: 20%;
+    }
+
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
+        font-size: 80%;
+    }
+
+    img.annuaireifa {
+        width: 85%;
+        height: 70%;
+    }
+
+    a.cv {
+        width: 85%;
+        height: 70%;
+    }
+
+    a.bilan-ea {
+        width: 42%;
+        height: 66%;
+    }
+
+    p.contact,
+    label {
+        font-size: 85%;
+    }
+
+    #nom,
+    #prénom,
+    #mail,
+    #message {
+        height: 90%;
+        width: 18%;
+    }
+
+    li.espagne {
+        list-style-image: url(/HTML/CV-final/images/puce_espagne_small.png);
+    }
+
+    li.usa {
+        list-style-image: url(/HTML/CV-final/images/puce_usa_small.png);
+    }
+
+    footer {
+        background: url(/HTML/CV-final/images/footer-800.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15%;
+    }
+
+    .contact-footer {
+        font-size: 90%;
+    }
+
+    div.container {
+        height: 100%;
+        margin-top: 1%;
+    }
+
+    div.LinkedIn {
+        width: 5%;
+        height: 45%;
+        margin-left: 16%;
+    }
+
+    .LinkedIn img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.Viadeo {
+        width: 5%;
+        height: 45%;
+    }
+
+    .Viadeo img {
+        width: 98%;
+        height: 100%;
+    }
+
+    div.RemixJobs {
+        width: 6.5%;
+        height: 45%;
+    }
+
+    .RemixJobs img {
+        height: 100%;
+    }
+
+    div.DoYouBuzz {
+        width: 17.4%;
+        height: 45%;
+    }
+
+    .DoYouBuzz img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*Responsive iPad Pro portrait and screens with a width of 1024px*/
@@ -1213,21 +1705,22 @@ div.DoYouBuzz:hover {
         line-height: 1;
         padding: 1% 0 1% 0;
     }
-    
+
     .main {
-        padding-bottom: 13%;
+        margin-bottom: 14%;
     }
 
     .banner {
-        background-image: url(/HTML/CV-final/images/banner.jpg);
-        background-repeat: no-repeat;
         height: 18%;
+        background: url(/HTML/CV-final/images/banner-1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-   
+
     nav.breadcrumb {
-       width: 100%;
-       height: 5%;
-       margin: 0;
+        width: 100%;
+        height: 5%;
+        margin: 0;
     }
 
     .breadcrumb ul {
@@ -1264,7 +1757,7 @@ div.DoYouBuzz:hover {
     }
 
     .p-home {
-        font-size: 20px;
+        font-size: 105%;
     }
 
     .europe-assur {
@@ -1301,11 +1794,15 @@ div.DoYouBuzz:hover {
         padding-bottom: 0;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
         height: 420px;
     }
 
-    .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
         font-size: 90%;
     }
 
@@ -1328,8 +1825,11 @@ div.DoYouBuzz:hover {
         height: 60%;
     }
 
-    #nom, #prénom, #mail, #message {
-        width: 23%;
+    #nom,
+    #prénom,
+    #mail,
+    #message {
+        width: 18%;
     }
 
     li.espagne {
@@ -1340,28 +1840,33 @@ div.DoYouBuzz:hover {
         list-style-image: url(/HTML/CV-final/images/puce_usa_small.png);
     }
 
+    label {
+        line-height: 3em;
+    }
+
     footer {
-        height: 100px;
-        background-image: url(/HTML/CV-final/images/footer.jpg);
+        height: 10%;
+        background: url(/HTML/CV-final/images/footer-1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     div.container {
         height: 100%;
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .contact-footer {
-        font-size: 17px;
+        font-size: 120%;
     }
 
     div.LinkedIn {
         margin-left: 17%;
     }
-
 }
 
-/*Screens with a width between 1025px and 1440px*/
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+/*Responsive iPad Pro landscape and screens with a width of 1366px*/
+@media screen and (orientation:landscape) and (min-width: 1025px) and (max-width: 1366px) {
     nav.menu {
         height: 17%;
     }
@@ -1383,21 +1888,22 @@ div.DoYouBuzz:hover {
         line-height: 1;
         padding: 1% 0 1% 0;
     }
-    
+
     .main {
-        padding-bottom: 9%;
+        margin-bottom: 15%;
     }
 
     .banner {
-        background-image: url(/HTML/CV-final/images/banner.jpg);
+        height: 25%;
+        background: url(/HTML/CV-final/images/banner-1440.jpg);
         background-repeat: no-repeat;
-        height: 30%;
+        background-size: cover;
     }
-   
+
     nav.breadcrumb {
-       width: 100%;
-       height: 5%;
-       margin: 0;
+        width: 100%;
+        height: 5%;
+        margin: 0;
     }
 
     .breadcrumb ul {
@@ -1430,11 +1936,196 @@ div.DoYouBuzz:hover {
 
     img.Remi {
         width: 20%;
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .p-home {
         font-size: 20px;
+        margin-top: 3%;
+    }
+
+    .europe-assur {
+        width: 10%;
+    }
+
+    .novalem {
+        width: 15%;
+    }
+
+    .orange {
+        width: 6%;
+    }
+
+    .guinot {
+        width: 15%;
+    }
+
+    .synergie {
+        width: 6%;
+    }
+
+    ul.datetime {
+        margin: 3% 0 0 5%;
+        padding: 0;
+    }
+
+    .datetime li {
+        margin: 0;
+    }
+
+    .portfolio-grid {
+        grid-row-gap: 0;
+        padding-bottom: 0;
+    }
+
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
+        height: 470px;
+    }
+
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
+        font-size: 95%;
+    }
+
+    img.annuaireifa {
+        width: 85%;
+        height: 60%;
+    }
+
+    a.cv {
+        width: 85%;
+        height: 60%;
+    }
+
+    a.bilan-ea {
+        width: 43%;
+        height: 60%;
+    }
+
+    label {
+        line-height: 3em;
+    }
+
+    #nom,
+    #prénom,
+    #mail,
+    #message {
+        width: 13%;
+    }
+
+    input[type="submit"] {
+        margin-top: 2%;
+    }
+
+    li.espagne {
+        list-style-image: url(/HTML/CV-final/images/puce_espagne.png);
+    }
+
+    li.usa {
+        list-style-image: url(/HTML/CV-final/images/puce_usa.png);
+    }
+
+    footer {
+        height: 13%;
+        background-image: url(/HTML/CV-final/images/footer-1440.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div.container {
+        height: 100%;
+        margin-top: 1%;
+    }
+
+    .contact-footer {
+        font-size: 105%;
+    }
+
+    div.LinkedIn {
+        margin-left: 17%;
+    }
+}
+
+/*Screens portrait with a width of 1440px*/
+@media screen and (orientation: portrait) and (min-width: 1025px) and (max-width: 1440px) {
+    nav.menu {
+        height: 10%;
+    }
+
+    .menu ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    .menu li {
+        width: 22%;
+        margin: 0 1% 2% 0;
+        font-size: 100%;
+        line-height: 1;
+        padding: 1% 0 1% 0;
+    }
+
+    .main {
+        margin-bottom: 15%;
+    }
+
+    .banner {
+        height: 20%;
+        background: url(/HTML/CV-final/images/banner-1440.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav.breadcrumb {
+        width: 100%;
+        height: 5%;
+        margin: 0;
+    }
+
+    .breadcrumb ul {
+        margin-left: 5%;
+        padding: 0;
+        font-size: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 5% 0 2% 0;
+    }
+
+    h3 {
+        margin-top: 2%;
+        font-size: 90%;
+    }
+
+    li {
+        line-height: 2em;
+    }
+
+    .main ul {
+        margin: 0 0 0 5%;
+        padding: 0;
+    }
+
+    img.Remi {
+        width: 30%;
+        margin-top: 5%;
+    }
+
+    .p-home {
+        font-size: 130%;
+        margin-top: 5%;
     }
 
     .europe-assur {
@@ -1471,11 +2162,15 @@ div.DoYouBuzz:hover {
         padding-bottom: 0;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
         height: 420px;
     }
 
-    .p-portfolio-1, .p-portfolio-2, .p-portfolio-3 {
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
         font-size: 95%;
     }
 
@@ -1494,21 +2189,34 @@ div.DoYouBuzz:hover {
         height: 60%;
     }
 
-    #nom, #prénom, #mail, #message {
-        width: 15%;
+    label {
+        line-height: 3em;
+    }
+
+    #nom,
+    #prénom,
+    #mail,
+    #message {
+        width: 20%;
+    }
+
+    input[type="submit"] {
+        margin-top: 2%;
     }
 
     li.espagne {
-        list-style-image: url(/HTML/CV-final/images/puce_espagne_small.png);
+        list-style-image: url(/HTML/CV-final/images/puce_espagne.png);
     }
 
     li.usa {
-        list-style-image: url(/HTML/CV-final/images/puce_usa_small.png);
+        list-style-image: url(/HTML/CV-final/images/puce_usa.png);
     }
 
     footer {
-        height: 100px;
-        background-image: url(/HTML/CV-final/images/footer.jpg);
+        height: 8%;
+        background-image: url(/HTML/CV-final/images/footer-1440.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     div.container {
@@ -1523,9 +2231,220 @@ div.DoYouBuzz:hover {
     div.LinkedIn {
         margin-left: 17%;
     }
-
 }
-/*A FAIRE : Screens with a width between 1025px and 1440px*/
-/*PREVOIR @MEDIA POUR + DE 1440 + PORTRAIT ET PAYSAGE POUR CHAQUE JUSQU'A ?? + PRINT*/
+
+/*Screens landscape with a width between 1367 and 1920px*/
+@media screen and (orientation:landscape) and (min-width: 1367px) and (max-width: 1920px) {
+    nav.menu {
+        height: 9%;
+    }
+
+    .menu ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1% 0 0 0.5%;
+    }
+
+    .menu li {
+        width: 13%;
+        margin: 0 1% 2% 0;
+        font-size: 100%;
+        line-height: 0.5;
+        padding: 1% 0 1% 0;
+    }
+
+    .main {
+        margin-bottom: 7%;
+    }
+
+    .banner {
+        height: 20%;
+        background: url(/HTML/CV-final/images/banner-1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav.breadcrumb {
+        width: 100%;
+        height: 5%;
+        margin: 0;
+    }
+
+    .breadcrumb ul {
+        margin-left: 5%;
+        padding: 0;
+        font-size: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 2% 0 2% 0;
+    }
+
+    h3 {
+        margin-top: 2%;
+    }
+
+    li {
+        line-height: 2em;
+    }
+
+    .main ul {
+        margin: 0 0 0 5%;
+        padding: 0;
+        font-size: 110%;
+    }
+
+    img.Remi {
+        width: 15%;
+        margin-top: 2%;
+    }
+
+    .p-home {
+        font-size: 20px;
+        margin-top: 1%;
+    }
+
+    .europe-assur {
+        width: 8%;
+    }
+
+    .novalem {
+        width: 11%;
+    }
+
+    .orange {
+        width: 5%;
+    }
+
+    .guinot {
+        width: 11%;
+    }
+
+    .synergie {
+        width: 5%;
+    }
+
+    ul.datetime {
+        margin: 2% 0 0 5%;
+        padding: 0;
+        font-size: 110%;
+    }
+
+    .datetime li {
+        margin: 0;
+    }
+
+    .portfolio-grid {
+        grid-row-gap: 0;
+        padding-bottom: 0;
+    }
+
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3 {
+        height: 470px;
+    }
+
+    .portfolio-3 {
+        margin-bottom: 5%;
+    }
+
+    .p-portfolio-1,
+    .p-portfolio-2,
+    .p-portfolio-3 {
+        font-size: 95%;
+    }
+
+    img.annuaireifa {
+        width: 70%;
+        height: 80%;
+    }
+
+    a.cv {
+        width: 70%;
+        height: 80%;
+    }
+
+    a.bilan-ea {
+        width: 35%;
+        height: 80%;
+    }
+
+    label {
+        line-height: 3em;
+    }
+
+    #nom,
+    #prénom,
+    #mail,
+    #message {
+        width: 10%;
+    }
+
+    input[type="submit"] {
+        margin-top: 1%;
+    }
+
+    li.espagne {
+        list-style-image: url(/HTML/CV-final/images/puce_espagne.png);
+    }
+
+    li.usa {
+        list-style-image: url(/HTML/CV-final/images/puce_usa.png);
+    }
+
+    footer {
+        height: 12%;
+        background-image: url(/HTML/CV-final/images/footer-1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    div.container {
+        height: 100%;
+        margin-top: 1%;
+    }
+
+    .contact-footer {
+        font-size: 105%;
+    }
+
+    div.LinkedIn {
+        margin-left: 26%;
+    }
+}
+
+
+/*Impression*/
+@media print {
+    .menu li {
+        width: calc(100%/7);
+    }
+
+    footer {
+        border: solid 1px #000;
+    }
+}
+
+
+/*FAIRE print*/
+
+
+/*PROBLEME IMAGES PORTFOLIO RESPONSIVE*/
+
+
+/*PREVOIR @MEDIA POUR + DE 1440 + PORTRAIT ET PAYSAGE POUR CHAQUE JUSQU'A ??*/
+
+
 /*REGLER PROBLEME ANNUAIRE PORTFOLIO*/
+
+
 /*CHANGER TAILLE BORDURES SUR HOVER DANS FOOTER*/
