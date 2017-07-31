@@ -429,6 +429,10 @@ div.DoYouBuzz:hover {
     border-radius: 8px;
 }
 
+.erreur-404 {
+    text-align: center;
+}
+
 /*Responsive smartphone portrait*/
 @media screen and (orientation:portrait) and (max-width: 414px) {
     nav.menu {
