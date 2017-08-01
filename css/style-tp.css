@@ -437,7 +437,13 @@ div.DoYouBuzz:hover {
     margin: 5% calc(50% - 100px) 0 calc(50% - 100px);
 }
 
-.erreur-404 {
+p.oops {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+p.erreur-404 {
     margin-top: 2%;
     text-align: center;
 }
