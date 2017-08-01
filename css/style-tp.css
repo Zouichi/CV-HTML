@@ -429,7 +429,16 @@ div.DoYouBuzz:hover {
     border-radius: 8px;
 }
 
+.gandalf {
+    height: 83px;
+    width: 200px;
+    background: url(/HTML/CV-final/images/gandalf.gif);
+    background-repeat: no-repeat;
+    margin: 5% calc(50% - 100px) 0 calc(50% - 100px);
+}
+
 .erreur-404 {
+    margin-top: 2%;
     text-align: center;
 }
 
