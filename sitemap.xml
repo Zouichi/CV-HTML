@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>home.html</loc>
+        <loc>FR/accueil.html</loc>
     </url>
     <url>
-        <loc>experiences.html</loc>
+        <loc>FR/experiences.html</loc>
     </url>
     <url>
-        <loc>formations.html</loc>
+        <loc>FR/formations.html</loc>
     </url>
     <url>
-        <loc>competences.html</loc>
+        <loc>FR/competences.html</loc>
     </url>
     <url>
-        <loc>portfolio.html</loc>
+        <loc>FR/portfolio.html</loc>
     </url>
     <url>
-        <loc>loisirs.html</loc>
+        <loc>FR/loisirs.html</loc>
     </url>
     <url>
-        <loc>contact.html</loc>
+        <loc>FR/contact.html</loc>
+    </url>
+    <url>
+        <loc>EN/home.html</loc>
+    </url>
+    <url>
+        <loc>EN/work-experience.html</loc>
+    </url>
+    <url>
+        <loc>EN/education.html</loc>
+    </url>
+    <url>
+        <loc>EN/skills.html</loc>
+    </url>
+    <url>
+        <loc>EN/portfolio.html</loc>
+    </url>
+    <url>
+        <loc>EN/hobbies.html</loc>
+    </url>
+    <url>
+        <loc>EN/contact.html</loc>
     </url>
 </urlset>

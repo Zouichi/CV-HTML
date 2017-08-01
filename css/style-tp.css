@@ -893,7 +893,7 @@ div.DoYouBuzz:hover {
 /*Reponsive iPad portrait*/
 @media screen and (orientation:portrait) and (min-width: 415px) and (max-width: 768px) {
     nav.menu {
-        height: 10.5%;
+        height: 12.5%;
     }
 
     .menu ul {
@@ -922,7 +922,7 @@ div.DoYouBuzz:hover {
         background: url(/HTML/CV-final/images/banner-768.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 18%;
+        height: 20%;
     }
 
     nav.breadcrumb {
@@ -1295,7 +1295,7 @@ div.DoYouBuzz:hover {
 /*Responsive old screen portrait*/
 @media screen and (orientation:portrait) and (min-width: 769px) and (max-width: 800px) {
     nav.menu {
-        height: 10.5%;
+        height: 12.5%;
     }
 
     .menu ul {
@@ -1324,7 +1324,7 @@ div.DoYouBuzz:hover {
         background: url(/HTML/CV-final/images/banner-800.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 18%;
+        height: 20%;
     }
 
     nav.breadcrumb {

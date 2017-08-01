@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /404.html
+Disallow: FR/404.html
+Disallow: EN/404.html
 Sitemap: sitemap.xml
