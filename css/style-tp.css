@@ -203,7 +203,6 @@ img body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 120px;
-    margin-bottom: 110px;
 }
 
 .portfolio-1,
@@ -238,15 +237,45 @@ img.annuaireifa {
     padding-top: 2px;
 }
 
-img.annuaireifa:hover {
+a.annuaireifa {
+    width: 70%;
+    height: 90%;
+    background-image: url(/HTML/CV-final/images/annuaire.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    color: #FFF;
+    padding-top: 2px;
+}
+
+a.annuaireifa:hover {
     background-image: url(/HTML/CV-final/images/git-annuaireifa.png);
     transition: all 2s;
     padding-top: 2px;
 }
 
+a.bilan-ea {
+    width: 70%;
+    height: 90%;
+    background-image: url(/HTML/CV-final/images/bilan.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: inline-block;
+    color: #FFF;
+    padding-top: 2px;
+}
+
+a.bilan-ea:hover {
+    background-image: url(/HTML/CV-final/images/git-bilan-ea.png);
+    transition: all 2s;
+    padding-top: 2px;
+}
+
 a.cv {
-    width: 60%;
-    height: 100%;
+    width: 35%;
+    height: 90%;
     background-image: url(/HTML/CV-final/images/cv.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -258,24 +287,6 @@ a.cv {
 
 a.cv:hover {
     background-image: url(/HTML/CV-final/images/git-cv.png);
-    transition: all 2s;
-    padding-top: 2px;
-}
-
-a.bilan-ea {
-    width: 30%;
-    height: 100%;
-    background-image: url(/HTML/CV-final/images/europe-assurance.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    display: inline-block;
-    color: #FFF;
-    padding-top: 2px;
-}
-
-a.bilan-ea:hover {
-    background-image: url(/HTML/CV-final/images/git-bilan-ea.png);
     transition: all 2s;
     padding-top: 2px;
 }
@@ -578,20 +589,19 @@ p.erreur-404 {
         font-size: 80%;
     }
 
-    img.annuaireifa {
+    a.annuaireifa {
         width: 85%;
         height: 50%;
-    }
-
-    a.cv {
-        width: 85%;
-        height: 50%;
-        margin-top: 8%;
     }
 
     a.bilan-ea {
-        width: 43%;
+        width: 85%;
         height: 50%;
+    }
+    
+    a.cv {
+        width: 42.5%;
+        height: 45.5%;
     }
 
     p.contact,
@@ -786,14 +796,8 @@ p.erreur-404 {
         margin-bottom: 0;
     }
 
-    .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
-        height: 94%;
-    }
-
-    .portfolio-3 {
-        margin-bottom: 20%;
+    .portfolio-1, .portfolio-2, .portfolio-3 {
+        height: 250px;
     }
 
     .p-portfolio-1,
@@ -802,22 +806,16 @@ p.erreur-404 {
         font-size: 80%;
     }
 
-    img.annuaireifa {
-        width: 85%;
-        height: 70%;
+    a.annuaireifa, a.bilan-ea {
+        width: 75%;
+        height: 60%;
     }
 
     a.cv {
-        width: 85%;
-        height: 70%;
-        margin-top: 5%;
+        width: 37.5%;
+        height: 60%;
     }
-
-    a.bilan-ea {
-        width: 43%;
-        height: 70%;
-    }
-
+    
     p.contact,
     label {
         font-size: 85%;
@@ -1023,22 +1021,16 @@ p.erreur-404 {
         margin-left: 1%;
     }
 
-    img.annuaireifa {
-        width: 85%;
+    a.annuaireifa, a.bilan-ea {
+        width: 75%;
         height: 60%;
     }
 
     a.cv {
-        width: 85%;
-        height: 60%;
-        margin-top: 5%;
-    }
-
-    a.bilan-ea {
-        width: 43%;
+        width: 37.5%;
         height: 60%;
     }
-
+    
     #nom,
     #prénom,
     #mail,
@@ -1192,7 +1184,7 @@ p.erreur-404 {
     .portfolio-1,
     .portfolio-2,
     .portfolio-3 {
-        height: 105%;
+        height: 400px;
     }
 
     .portfolio-3 {
@@ -1205,21 +1197,16 @@ p.erreur-404 {
         font-size: 80%;
     }
 
-    img.annuaireifa {
-        width: 85%;
+    a.annuaireifa, a.bilan-ea {
+        width: 75%;
         height: 70%;
     }
 
     a.cv {
-        width: 85%;
+        width: 37.5%;
         height: 70%;
     }
-
-    a.bilan-ea {
-        width: 43%;
-        height: 70%;
-    }
-
+    
     p.contact,
     label {
         font-size: 85%;
@@ -2387,13 +2374,13 @@ p.erreur-404 {
         height: 80%;
     }
 
-    a.cv {
+    a.bilan-ea {
         width: 70%;
         height: 80%;
     }
 
-    a.bilan-ea {
-        width: 35%;
+    a.cv {
+        width: 70%;
         height: 80%;
     }
 
@@ -2457,13 +2444,7 @@ p.erreur-404 {
 /*FAIRE print*/
 
 
-/*PROBLEME IMAGES PORTFOLIO RESPONSIVE*/
+/*PROBLEME IMAGES PORTFOLIO RESPONSIVE + HOVER IMAGE 1*/
 
 
 /*PREVOIR @MEDIA POUR + DE 1440 + PORTRAIT ET PAYSAGE POUR CHAQUE JUSQU'A ??*/
-
-
-/*REGLER PROBLEME ANNUAIRE PORTFOLIO*/
-
-
-/*CHANGER TAILLE BORDURES SUR HOVER DANS FOOTER*/
