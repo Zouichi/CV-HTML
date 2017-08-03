@@ -1,0 +1,3 @@
+Finir @media print
+Revoir le CSS responsive pour les skills (margin)
+Rich snippets ?

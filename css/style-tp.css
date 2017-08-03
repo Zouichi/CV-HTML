@@ -134,6 +134,12 @@ li {
     color: #c9c9cc;
 }
 
+span {
+    font-family: 'Dosis', sans-serif;
+    font-size: 100%;
+    color: #c9c9cc;
+}
+
 .datetime li {
     margin-bottom: 15px;
 }
@@ -199,16 +205,7 @@ img body {
     border-radius: 8px;
 }
 
-ul.skills {
-    margin: 1% 0 0 0;
-    padding: 0;
-}
-
-.skills li {
-    margin: 0 2.5% 0 2.5%;
-}
-
-.skills li:before {
+.skills:before {
     content: none;
 }
 
@@ -629,7 +626,7 @@ p.erreur-404 {
         margin: 0;
     }
 
-    .skills li {
+    .skills {
         margin: 0;
     }
 
@@ -1081,7 +1078,7 @@ p.erreur-404 {
         margin: 0;
     }
 
-    ul.skills {
+    .skills {
         margin: 1% 0 0 0;
     }
 
@@ -1489,7 +1486,7 @@ p.erreur-404 {
         margin: 0;
     }
 
-    .skills li {
+    .skills {
         margin: 0;
     }
 
@@ -1904,7 +1901,7 @@ p.erreur-404 {
         margin: 0;
     }
 
-    ul.skills {
+    .skills {
         margin: 1% 0 0 0;
     }
 
@@ -2099,7 +2096,7 @@ p.erreur-404 {
         margin: 0;
     }
 
-    ul.skills {
+    .skills {
         margin: 1% 0 0 0;
     }
 
@@ -2294,7 +2291,7 @@ p.erreur-404 {
         margin: 0;
     }
 
-    ul.skills {
+    .skills {
         margin: 1% 0 0 0;
     }
 
@@ -2490,10 +2487,10 @@ p.erreur-404 {
         margin: 0;
     }
 
-    ul.skills {
+    .skills {
     margin: 1% 0 0 0;
     padding: 0;
-}
+    }
 
     .portfolio-grid {
         grid-row-gap: 0;
@@ -2570,17 +2567,26 @@ p.erreur-404 {
     }
 }
 
-
 /*Impression*/
 @media print {
+    .menu {
+        width: 100%;
+    }
+
     .menu li {
-        width: calc(100%/7);
+        display: none;
+    }
+
+    nav.breadcrumb {
+        display: none;
     }
 
     footer {
-        border: solid 1px #000;
+        display: none;
     }
 }
+
+
 
 
 /*FAIRE print*/
