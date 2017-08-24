@@ -1,3 +1,7 @@
+Revoir height portfolio
 Finir @media print
+Pb affichage menu sur FireFox
 Revoir le CSS responsive pour les skills (margin)
 Rich snippets ?
+Skills : changer nb colonnes responsive
+Adapter responsive avec console debug Google plutôt que par appareil

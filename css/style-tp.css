@@ -32,42 +32,55 @@ h3 {
     color: #c9c9cc;
 }
 
-.p-home {
-    text-align: center;
+ul {
+    line-height: 1.5;
+    padding-left: 100px;
+}
+
+li {
+    list-style-type: none;
     line-height: 1.7;
+    font-family: 'Dosis', sans-serif;
     color: #c9c9cc;
 }
 
-.p-home a {
-    color: #c9c9cc;
-}
-
-.p-home a:hover {
-    color: #FFFFFF;
-}
-
+/*----------Main content----------*/
 .main {
-    margin-bottom: 12%;
+    margin-bottom: 8%;
+}
+
+.main ul {
+    margin: 0;
 }
 
 .main li:before {
     content: "→ ";
 }
+/*----------Main content----------*/
+
+/*----------Menu----------*/
+nav.menu {
+    height: 6em;
+    display: inline;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .menu {
     width: 100%;
-    display: inline-block;
     text-align: center;
     background-color: #2f2f30;
 }
 
 .menu ul {
+    width: 100%;
     padding-left: 0px;
     display: inline-block;
 }
 
 .menu li {
-    width: 165px;
+    width: 10.5%;
     margin-right: 10px;
     padding-right: 30px;
     padding-left: 30px;
@@ -78,6 +91,7 @@ h3 {
     float: left;
     font-family: 'Play', sans-serif;
     font-size: 20px;
+    line-height: 1;
 }
 
 .menu li:hover {
@@ -94,15 +108,18 @@ h3 {
     color: #2f2f30;
     text-decoration: underline;
 }
+/*----------Menu----------*/
 
-nav.menu {
-    height: 4em;
-    display: inline;
-    position: fixed;
-    top: 0;
+.banner {
+    background: url(/HTML/CV-final/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 18.5%;
+    margin: 0;
 }
 
+/*----------Breadcrumb----------*/
 nav.breadcrumb {
     float: left;
     display: block;
@@ -117,28 +134,24 @@ nav.breadcrumb {
 .breadcrumb a {
     color: #c9c9cc;
 }
+/*----------Breadcrumb----------*/
 
-ul {
-    line-height: 1.5;
-    padding-left: 100px;
-}
 
-.main ul {
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
+/*----------Home page----------*/
+.p-home {
+    text-align: center;
     line-height: 1.7;
-    font-family: 'Dosis', sans-serif;
     color: #c9c9cc;
 }
 
-span {
-    font-family: 'Dosis', sans-serif;
-    font-size: 100%;
+.p-home a {
     color: #c9c9cc;
 }
+
+.p-home a:hover {
+    color: #FFFFFF;
+}
+/*----------Home page----------*/
 
 .datetime li {
     margin-bottom: 15px;
@@ -153,15 +166,6 @@ img body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-}
-
-.banner {
-    background: url(/HTML/CV-final/images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 150px;
-    margin: 0;
 }
 
 .Remi {
@@ -222,6 +226,12 @@ img body {
     text-align: center;
 }
 
+span {
+    font-family: 'Dosis', sans-serif;
+    font-size: 100%;
+    color: #c9c9cc;
+}
+
 svg {
     margin-left: 46.5%;
 }
@@ -260,7 +270,6 @@ text {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 120px;
 }
 
 .portfolio-1,
@@ -285,68 +294,52 @@ text {
     grid-row: 2;
 }
 
-img.annuaireifa {
-    width: 60%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    color: #FFF;
-    padding-top: 2px;
-}
-
 a.annuaireifa {
-    width: 70%;
-    height: 90%;
+    width: 50%;
+    height: 70%;
     background-image: url(/HTML/CV-final/images/annuaire.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: inline-block;
     color: #FFF;
-    padding-top: 2px;
 }
 
 a.annuaireifa:hover {
     background-image: url(/HTML/CV-final/images/git-annuaireifa.png);
     transition: all 2s;
-    padding-top: 2px;
 }
 
 a.bilan-ea {
-    width: 70%;
-    height: 90%;
+    width: 50%;
+    height: 70%;
     background-image: url(/HTML/CV-final/images/bilan.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: inline-block;
     color: #FFF;
-    padding-top: 2px;
 }
 
 a.bilan-ea:hover {
     background-image: url(/HTML/CV-final/images/git-bilan-ea.png);
     transition: all 2s;
-    padding-top: 2px;
 }
 
 a.cv {
-    width: 35%;
-    height: 90%;
+    width: 25%;
+    height: 70%;
     background-image: url(/HTML/CV-final/images/cv.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: inline-block;
     color: #FFF;
-    padding-top: 2px;
 }
 
 a.cv:hover {
     background-image: url(/HTML/CV-final/images/git-cv.png);
     transition: all 2s;
-    padding-top: 2px;
 }
 
 li.espagne::before {
@@ -518,7 +511,7 @@ p.erreur-404 {
 }
 
 /*Responsive smartphone portrait*/
-@media screen and (orientation:portrait) and (max-width: 414px) {
+/*@media screen and (orientation:portrait) and (max-width: 414px) {
     nav.menu {
         height: 10.5%;
     }
@@ -750,10 +743,10 @@ p.erreur-404 {
         width: 100%;
         height: 100%;
     }
-}
+}*/
 
 /*Responsive smartphone landscape*/
-@media screen and (orientation:landscape) and (max-width: 799px) {
+/*@media screen and (orientation:landscape) and (max-width: 799px) {
     nav.menu {
         height: 21.5%;
     }
@@ -970,10 +963,10 @@ p.erreur-404 {
         width: 100%;
         height: 100%;
     }
-}
+}*/
 
 /*Reponsive iPad portrait*/
-@media screen and (orientation:portrait) and (min-width: 415px) and (max-width: 768px) {
+/*@media screen and (orientation:portrait) and (min-width: 415px) and (max-width: 768px) {
     nav.menu {
         height: 12.5%;
     }
@@ -1155,10 +1148,10 @@ p.erreur-404 {
     div.LinkedIn {
         margin-left: 17%;
     }
-}
+}*/
 
 /*Responsive iPad landscape*/
-@media screen and (orientation:landscape) and (min-width: 1024px) and (max-width: 1024px) {
+/*@media screen and (orientation:landscape) and (min-width: 1024px) and (max-width: 1024px) {
     nav.menu {
         height: 15%;
     }
@@ -1377,10 +1370,10 @@ p.erreur-404 {
         width: 100%;
         height: 100%;
     }
-}
+}*/
 
 /*Responsive old screen portrait*/
-@media screen and (orientation:portrait) and (min-width: 769px) and (max-width: 800px) {
+/*@media screen and (orientation:portrait) and (min-width: 769px) and (max-width: 800px) {
     nav.menu {
         height: 12.5%;
     }
@@ -1563,10 +1556,10 @@ p.erreur-404 {
     div.LinkedIn {
         margin-left: 17%;
     }
-}
+}*/
 
 /*Responsive old screen landscape*/
-@media screen and (orientation:landscape) and (min-width: 800px) and (max-width: 801px) {
+/*@media screen and (orientation:landscape) and (min-width: 800px) and (max-width: 801px) {
     nav.menu {
         height: 15%;
     }
@@ -1792,10 +1785,10 @@ p.erreur-404 {
         width: 100%;
         height: 100%;
     }
-}
+}*/
 
 /*Responsive iPad Pro portrait and screens with a width of 1024px*/
-@media screen and (orientation:portrait) and (min-width: 801px) and (max-width: 1024px) {
+/*@media screen and (orientation:portrait) and (min-width: 801px) and (max-width: 1024px) {
     nav.menu {
         height: 10%;
     }
@@ -1986,10 +1979,10 @@ p.erreur-404 {
     div.LinkedIn {
         margin-left: 17%;
     }
-}
+}*/
 
 /*Responsive iPad Pro landscape and screens with a width of 1366px*/
-@media screen and (orientation:landscape) and (min-width: 1025px) and (max-width: 1366px) {
+/*@media screen and (orientation:landscape) and (min-width: 1025px) and (max-width: 1366px) {
     nav.menu {
         height: 17%;
     }
@@ -2181,10 +2174,10 @@ p.erreur-404 {
     div.LinkedIn {
         margin-left: 17%;
     }
-}
+}*/
 
 /*Screens portrait with a width of 1440px*/
-@media screen and (orientation: portrait) and (min-width: 1025px) and (max-width: 1440px) {
+/*@media screen and (orientation: portrait) and (min-width: 1025px) and (max-width: 1440px) {
     nav.menu {
         height: 10%;
     }
@@ -2376,10 +2369,10 @@ p.erreur-404 {
     div.LinkedIn {
         margin-left: 17%;
     }
-}
+}*/
 
 /*Screens landscape with a width between 1367 and 1920px*/
-@media screen and (orientation:landscape) and (min-width: 1367px) and (max-width: 1920px) {
+/*@media screen and (orientation:landscape) and (min-width: 1367px) and (max-width: 1920px) {
     nav.menu {
         height: 9%;
     }
@@ -2565,7 +2558,7 @@ p.erreur-404 {
     div.LinkedIn {
         margin-left: 26%;
     }
-}
+}*/
 
 /*Impression*/
 @media print {
@@ -2585,8 +2578,3 @@ p.erreur-404 {
         display: none;
     }
 }
-
-
-
-
-/*FAIRE print*/
