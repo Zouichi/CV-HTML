@@ -1,7 +1,8 @@
+﻿Rajouter Quiz-IFA dans portfolio
 Revoir height portfolio
 Finir @media print
 Pb affichage menu sur FireFox
 Revoir le CSS responsive pour les skills (margin)
 Rich snippets ?
-Skills : changer nb colonnes responsive
+Skills : changer nb colonnes en responsive
 Adapter responsive avec console debug Google plutôt que par appareil
