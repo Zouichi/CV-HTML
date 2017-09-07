@@ -44,6 +44,13 @@ li {
     color: #c9c9cc;
 }
 
+img body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
 /*----------Main content----------*/
 .main {
     margin-bottom: 8%;
@@ -57,6 +64,7 @@ li {
     content: "→ ";
 }
 /*----------Main content----------*/
+
 
 /*----------Menu----------*/
 nav.menu {
@@ -75,15 +83,16 @@ nav.menu {
 
 .menu ul {
     width: 100%;
+    margin-left: 0.5%;
     padding-left: 0px;
     display: inline-block;
 }
 
 .menu li {
     width: 10.5%;
-    margin-right: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    margin-right: 0.5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
     text-align: center;
     border: solid 1px #c9c9cc;
     border-radius: 12px 0 12px 0;
@@ -108,7 +117,6 @@ nav.menu {
     color: #2f2f30;
     text-decoration: underline;
 }
-/*----------Menu----------*/
 
 .banner {
     background: url(/HTML/CV-final/images/banner.jpg);
@@ -118,6 +126,55 @@ nav.menu {
     height: 18.5%;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    nav.menu {
+        display: none;
+    }
+}
+/*----------Menu----------*/
+
+
+/*----------Dropdown menu----------*/
+.dropdown-icon {
+    font-size: 200%;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+    position: fixed;
+    display: inline-block;
+    margin: -160px 0 0 10px;
+    }    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 185px;
+    background: #4a4a4c;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #c9c9cc;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*----------Dropdown menu----------*/
 
 /*----------Breadcrumb----------*/
 nav.breadcrumb {
@@ -153,6 +210,8 @@ nav.breadcrumb {
 }
 /*----------Home page----------*/
 
+
+/*----------Experiences----------*/
 .datetime li {
     margin-bottom: 15px;
 }
@@ -161,13 +220,8 @@ nav.breadcrumb {
     content: none;
 }
 
-img body {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-}
 
+/*----------Experiences----------*/
 .Remi {
     display: block;
     margin-left: auto;
@@ -209,6 +263,9 @@ img body {
     border-radius: 8px;
 }
 
+/*----------Experiences----------*/
+
+/*----------Skills----------*/
 .skills:before {
     content: none;
 }
@@ -266,6 +323,9 @@ text {
     font-size: 14px;
     font-weight: bold;
 }
+/*----------Skills----------*/
+
+/*----------Portfolio----------*/
 
 .portfolio-grid {
     display: grid;
@@ -273,8 +333,7 @@ text {
 }
 
 .portfolio-1,
-.portfolio-2,
-.portfolio-3 {
+.portfolio-2 {
     height: 400px;
     text-align: center;
 }
@@ -287,11 +346,6 @@ text {
 .portfolio-2 {
     grid-column: 2 / 4;
     grid-row: 1;
-}
-
-.portfolio-3 {
-    grid-column-start: span 2;
-    grid-row: 2;
 }
 
 a.annuaireifa {
@@ -310,10 +364,10 @@ a.annuaireifa:hover {
     transition: all 2s;
 }
 
-a.bilan-ea {
+a.quiz-ifa {
     width: 50%;
     height: 70%;
-    background-image: url(/HTML/CV-final/images/bilan.png);
+    background-image: url(/HTML/CV-final/images/quiz.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -321,26 +375,14 @@ a.bilan-ea {
     color: #FFF;
 }
 
-a.bilan-ea:hover {
-    background-image: url(/HTML/CV-final/images/git-bilan-ea.png);
+a.quiz-ifa:hover {
+    background-image: url(/HTML/CV-final/images/git-quiz-ifa.png);
     transition: all 2s;
 }
 
-a.cv {
-    width: 25%;
-    height: 70%;
-    background-image: url(/HTML/CV-final/images/cv.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    display: inline-block;
-    color: #FFF;
-}
+/*----------Portfolio----------*/
 
-a.cv:hover {
-    background-image: url(/HTML/CV-final/images/git-cv.png);
-    transition: all 2s;
-}
+/*----------Hobbies----------*/
 
 li.espagne::before {
     content: none;
@@ -360,6 +402,9 @@ li.usa {
     list-style-image: url(/HTML/CV-final/images/puce_usa.png);
 }
 
+/*----------Hobbies----------*/
+
+/*----------Contact----------*/
 form {
     text-align: center;
     color: #c9c9cc;
@@ -409,7 +454,10 @@ p.contact {
     text-align: center;
     color: #c9c9cc;
 }
+/*----------Contact----------*/
 
+
+/*----------Footer----------*/
 footer {
     height: 120px;
     width: 100%;
@@ -490,15 +538,10 @@ div.DoYouBuzz:hover {
 .RemixJobs img {
     border-radius: 8px;
 }
+/*----------Footer----------*/
 
-.gandalf {
-    height: 83px;
-    width: 200px;
-    background: url(/HTML/CV-final/images/gandalf.gif);
-    background-repeat: no-repeat;
-    margin: 5% calc(50% - 100px) 0 calc(50% - 100px);
-}
 
+/*----------404----------*/
 p.oops {
     text-align: center;
     font-size: 100px;
@@ -509,6 +552,60 @@ p.erreur-404 {
     margin-top: 2%;
     text-align: center;
 }
+/*----------404----------*/
+
+/*----------Responsive----------*/
+@media screen and (min-width: 1138px) and (max-width: 1423px) {
+    nav.menu {
+        height: 5em;
+    }  
+
+   .menu li {
+    font-size: 16px;
+   }
+}
+
+@media screen and (min-width: 998px) and (max-width: 1137px) {
+    nav.menu {
+        height: 4.5em;
+    }  
+
+   .menu li {
+    font-size: 14px;
+   }
+}
+
+@media screen and (min-width: 925px) and (max-width: 997px) {
+    nav.menu {
+        height: 4.5em;
+    }  
+
+    .menu li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 854px) and (max-width: 924px) {
+    nav.menu {
+        height: 4em;
+    }  
+
+    .menu li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 853px) {
+    nav.menu {
+        height: 4em;
+    }  
+
+    .menu li {
+        font-size: 11px;
+    }
+}
+/*----------Responsive----------*/
+
 
 /*Responsive smartphone portrait*/
 /*@media screen and (orientation:portrait) and (max-width: 414px) {
@@ -642,13 +739,8 @@ p.erreur-404 {
         height: 100%;
     }
 
-    .portfolio-3 {
-        height: 119%;
-    }
-
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 80%;
     }
 
@@ -657,16 +749,11 @@ p.erreur-404 {
         height: 50%;
     }
 
-    a.bilan-ea {
+    a.quiz-ifa {
         width: 85%;
         height: 50%;
     }
     
-    a.cv {
-        width: 42.5%;
-        height: 45.5%;
-    }
-
     p.contact,
     label {
         font-size: 85%;
@@ -867,26 +954,21 @@ p.erreur-404 {
         margin-bottom: 0;
     }
 
-    .portfolio-1, .portfolio-2, .portfolio-3 {
+    .portfolio-1,
+    .portfolio-2 {
         height: 250px;
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 80%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 75%;
         height: 60%;
     }
 
-    a.cv {
-        width: 37.5%;
-        height: 60%;
-    }
-    
     p.contact,
     label {
         font-size: 85%;
@@ -1089,14 +1171,12 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 330px;
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 90%;
     }
 
@@ -1104,16 +1184,11 @@ p.erreur-404 {
         margin-left: 1%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 75%;
         height: 60%;
     }
 
-    a.cv {
-        width: 37.5%;
-        height: 60%;
-    }
-    
     #nom,
     #prénom,
     #mail,
@@ -1273,24 +1348,17 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 400px;
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 80%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 75%;
-        height: 65%;
-    }
-
-    a.cv {
-        width: 37.5%;
         height: 65%;
     }
     
@@ -1497,14 +1565,12 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 330px;
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 90%;
     }
 
@@ -1512,16 +1578,11 @@ p.erreur-404 {
         margin-left: 1%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 85%;
         height: 60%;
     }
 
-    a.cv {
-        width: 42.5%;
-        height: 60%;
-    }
-    
     #nom,
     #prénom,
     #mail,
@@ -1684,14 +1745,12 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 300px;
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 80%;
     }
 
@@ -1699,16 +1758,11 @@ p.erreur-404 {
         margin-bottom: 7%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 85%;
         height: 70%;
     }
 
-    a.cv {
-        width: 42.5%;
-        height: 70%;
-    }
-    
     p.contact,
     label {
         font-size: 85%;
@@ -1912,8 +1966,7 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 380px;
     }
 
@@ -1922,8 +1975,7 @@ p.erreur-404 {
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 90%;
     }
 
@@ -1931,16 +1983,11 @@ p.erreur-404 {
         margin-left: 1%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 85%;
         height: 60%;
     }
 
-    a.cv {
-        width: 42%;
-        height: 60%;
-    }
-    
     #nom,
     #prénom,
     #mail,
@@ -2107,8 +2154,7 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 470px;
     }
 
@@ -2117,21 +2163,15 @@ p.erreur-404 {
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 95%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 80%;
         height: 60%;
     }
 
-    a.cv {
-        width: 40%;
-        height: 60%;
-    }
-    
     label {
         line-height: 3em;
     }
@@ -2302,8 +2342,7 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 450px;
     }
 
@@ -2312,21 +2351,15 @@ p.erreur-404 {
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 95%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 75%;
         height: 60%;
     }
 
-    a.cv {
-        width: 37.5%;
-        height: 60%;
-    }
-    
     label {
         line-height: 3em;
     }
@@ -2491,8 +2524,7 @@ p.erreur-404 {
     }
 
     .portfolio-1,
-    .portfolio-2,
-    .portfolio-3 {
+    .portfolio-2 {
         height: 500px;
     }
 
@@ -2501,21 +2533,15 @@ p.erreur-404 {
     }
 
     .p-portfolio-1,
-    .p-portfolio-2,
-    .p-portfolio-3 {
+    .p-portfolio-2 {
         font-size: 95%;
     }
 
-    a.annuaireifa, a.bilan-ea {
+    a.annuaireifa, a.quiz-ifa {
         width: 65%;
         height: 75%;
     }
     
-    a.cv {
-        width: 32.5%;
-        height: 75%;
-    }
-
     label {
         line-height: 3em;
     }
